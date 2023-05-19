@@ -1,0 +1,36 @@
+* {
+  background-color: black;
+  margin: 0px;
+  margin-top: 100px;
+  margin-left: 50px;
+  padding: 0;
+  justify-items: center;
+  justify-content: center;
+}
+
+.jump {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+
+.jump span {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  animation: jump 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes jump {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
